@@ -6,9 +6,10 @@
 <div class="row row justify-conent-center">
   <div>
     <h2>This is register form</h2>
-    <form method ="psot">
+    <form method ="post">
       {% csrf_token %}
       {{form}}
+      <button type="submit">Register</button>
     </form>
 
     <a href="{% url "home" %}">Go to homepage</a>
